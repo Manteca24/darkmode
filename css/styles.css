@@ -1,0 +1,144 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*--------------------------------------------------------------------------------*/
+
+body{
+    margin: 10px;
+}
+
+
+h1{
+    font-size: 50px;
+}
+
+h2{
+    font-size: 50px;
+    text-align: center;
+    margin: 10px;
+}
+
+
+.headertop{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bangkok{
+    width: 100%;
+    margin: 10px;
+}
+
+.toggle-container{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* light mode*/
+
+#dark-mode-toggle {
+    width: 60px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 15px;
+    margin: 20px auto;
+    position: relative;
+    cursor: pointer;
+}
+
+.toggle-circle {
+    width: 25px;
+    height: 25px;
+    background-color: yellow;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 2.5px;
+    left: 2.5px;
+    transition: transform 0.3s;
+}
+
+.toggle-circle img{
+    width: 20px;
+    height: 20px;
+    display: none;
+}
+
+
+.toggle-circle .sol{
+    display: block;
+} 
+
+/* dark mode */
+
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+    
+}
+
+
+body.dark-mode #dark-mode-toggle {
+    background-color: #333;
+}
+
+body.dark-mode .toggle-circle {
+    transform: translateX(30px);
+    background-color: blue;
+}
+
+body.dark-mode h1, body.dark-mode h2{
+    color: yellow;
+}
+body.dark-mode .sol {
+    display: none;
+}
+
+body.dark-mode .luna {
+    display: block;
+}
